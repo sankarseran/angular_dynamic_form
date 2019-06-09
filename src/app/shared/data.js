@@ -31,11 +31,13 @@ const data = {
             answer: '24'
         },
         {
+            id: 6,
             question: 'In which animal is respiration done by skin?',
             options: ['Frogs', 'Dogs', 'Rats', 'Monkeys'],
             answer: 'Frogs'
         },
         {
+            id: 7,
             question: 'What is the normal temperature of the human body?',
             options: ['98.4F', '92.4F', '94.4F', '95.4F'],
             answer: '98.4F'

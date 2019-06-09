@@ -29,7 +29,7 @@ const data = {
             question: 'A typical human ribcage consists of how many ribs?',
             options: ['12', '10', '24', '22'],
             answer: '24'
-        }
+        },
         {
             question: 'In which animal is respiration done by skin?',
             options: ['Frogs', 'Dogs', 'Rats', 'Monkeys'],

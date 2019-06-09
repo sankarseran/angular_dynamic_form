@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from '../shared/data';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonService } from '../shared/common.service';
 
@@ -13,6 +13,7 @@ export class TakeTestComponent implements OnInit {
   questions: any[];
   questionsFrom: FormGroup;
   saveFlag: boolean;
+  get answersFrom() { return this.questionsFrom.get('answers') as FormArray; }
 
   constructor(private fb: FormBuilder, private router: Router, private common: CommonService) {
     this.questions = data.data.gk;

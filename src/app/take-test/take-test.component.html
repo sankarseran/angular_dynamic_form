@@ -1,7 +1,7 @@
 <div class="test-container">
   <h3>GK Test</h3>
   <form (ngSubmit)="submit()" [formGroup]="questionsFrom">
-    <div formArrayName="answers" *ngFor="let answer of questionsFrom.get('answers').controls; let i = index">
+    <div formArrayName="answers" *ngFor="let answer of answersFrom.controls; let i = index">
       <div [formGroupName]="i">
         <mat-card class="qus-container" [ngClass]="{'on-err': saveFlag && 
           questionsFrom.get('answers').controls[i].get('answer').hasError('required')}">

@@ -30,31 +30,16 @@ const data = {
             options: ['12', '10', '24', '22'],
             answer: '24'
         }
-        // {
-        //     question: 'In which animal is respiration done by skin?',
-        //     options: ['Frogs', 'Dogs', 'Rats', 'Monkeys'],
-        //     answer: 'Frogs'
-        // },
-        // {
-        //     question: 'What is the normal temperature of the human body?',
-        //     options: ['98.4F', '92.4F', '94.4F', '95.4F'],
-        //     answer: '98.4F'
-        // },
-        // {
-        //     question: '',
-        //     options: [],
-        //     answer: ''
-        // },
-        // {
-        //     question: '',
-        //     options: [],
-        //     answer: ''
-        // },
-        // {
-        //     question: '',
-        //     options: [],
-        //     answer: ''
-        // }
+        {
+            question: 'In which animal is respiration done by skin?',
+            options: ['Frogs', 'Dogs', 'Rats', 'Monkeys'],
+            answer: 'Frogs'
+        },
+        {
+            question: 'What is the normal temperature of the human body?',
+            options: ['98.4F', '92.4F', '94.4F', '95.4F'],
+            answer: '98.4F'
+        }
     ]
 };
 

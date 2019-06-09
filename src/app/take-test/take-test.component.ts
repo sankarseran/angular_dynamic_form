@@ -46,7 +46,7 @@ export class TakeTestComponent implements OnInit {
     if (this.questionsFrom.valid) {
       const value = [
         { name: 'Correct', value: 0 },
-        { name: 'Wrong', value: 0 }
+        { name: 'Incorrect', value: 0 }
       ];
       this.questionsFrom.value.answers.forEach((answer, idx) => {
         if (answer.answer === this.questions[idx].answer) {

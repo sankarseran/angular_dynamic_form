@@ -1,0 +1,20 @@
+<h3 class="center">GK Test Result</h3>
+<div class="chart-container">
+  <ngx-charts-bar-vertical
+  [scheme]="colorScheme"
+  [results]="single"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [barPadding]="25"
+  (select)="onSelect($event)">
+</ngx-charts-bar-vertical>
+</div>
+<div class="bottom-action">
+    <button type="submit" mat-raised-button color="primary"  routerLink="/test">Take Test</button>
+</div>

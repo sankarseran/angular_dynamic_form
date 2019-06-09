@@ -1,0 +1,26 @@
+<div class="test-container">
+  <h3>GK Test</h3>
+  <form (ngSubmit)="submit()" [formGroup]="questionsFrom">
+    <div formArrayName="answers" *ngFor="let answer of questionsFrom.get('answers').controls; let i = index">
+      <div [formGroupName]="i">
+        <mat-card class="qus-container" [ngClass]="{'on-err': saveFlag && 
+          questionsFrom.get('answers').controls[i].get('answer').hasError('required')}">
+          <mat-card-header>
+            <p>{{questions[i].id}}.{{questions[i].question}}</p>
+          </mat-card-header>
+          <mat-form-field class="select-container">
+            <mat-select formControlName="answer">
+              <mat-option *ngFor="let option of questions[i].options" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card>
+      </div>
+    </div>
+    <div class="bottom-action">
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+      <button type="reset" mat-raised-button>Clear</button>
+    </div>
+  </form>
+</div>

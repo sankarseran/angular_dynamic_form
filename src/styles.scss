@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.take-test-home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    // padding: 30px;
+}
+
+.test-container {
+    width: 60%;
+    margin: auto;
+}
+
+mat-card-header {
+    background: #c3ccff;
+    div {
+        margin: 0 10px !important;
+    }
+}
+
+.qus-container {
+    margin-bottom: 10px;
+    padding: 0px !important;
+}
+
+.on-err{
+    border: 2px solid #ef0600;
+}
+
+.select-container {
+    margin: 5px 25px !important;
+}
+
+.bottom-action {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    button {
+        margin-right: 10px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .test-container {
+        width: 100%;
+        margin: auto;
+        h3 {
+            padding: 0 30px;
+        }
+        form {
+            padding: 0 30px;
+        }
+    }
+
+    .chart-container {
+        width: 100%;
+    }
+}
